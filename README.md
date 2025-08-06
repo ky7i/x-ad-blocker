@@ -1,14 +1,21 @@
 # x-ad-blocker
-chrome extension for blocking advertisement in x  
 
-バイブコーディングです。  
+A Chrome extension for blocking advertisements on X
+
+This is a learning-by-doing (vibe coding) project.
 
 ---
-### 学び  
-### element.closest("HTML Tag")  
-  - 最も近い親要素を引っ張てくる
-  - 階層が深いDOMで遠くにある親要素に display: none を効かしたかったので便利だった
 
-### MutationObserver
-  - DOMの変更を監視する
-  - スクロールのような変化をキャッチできる
+### Learnings
+
+#### `element.closest("HTML Tag")`
+
+* Retrieves the nearest ancestor element matching the specified tag
+* Useful when targeting a distant parent element deep in the DOM hierarchy to apply `display: none`
+
+#### `MutationObserver`
+
+* Observes changes in the DOM
+* Can detect dynamic changes such as scroll-based content loading
+
+---
