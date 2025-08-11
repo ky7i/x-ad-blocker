@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "X Ad Blocker",
   "version": "1.0",
-  "description": "X（旧Twitter）の広告を非表示にします。",
+  "description": "hide promoted tweets on X",
   "permissions": ["scripting"],
   "host_permissions": [
     "https://twitter.com/*",

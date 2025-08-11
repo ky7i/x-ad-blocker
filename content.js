@@ -11,9 +11,8 @@
 (function() {
     'use strict';
 
-    // X（旧Twitter）の広告ツイートを非表示にする
+    // Hide promoted tweets on X
     function hideAds() {
-        // 広告ラベルを持つspanを全て取得
         document.querySelectorAll('span.css-1jxf684').forEach(span => {
             if (span.innerText.trim() === 'Ad') {
                 const article = span.closest('article');
@@ -24,10 +23,10 @@
         });
     }
 
-    // ページ遷移や動的読み込みに対応
+    // Support page transitions and dynamic loading
     const observer = new MutationObserver(hideAds);
     observer.observe(document.body, { childList: true, subtree: true });
 
-    // 初回実行
+    // First run 
     hideAds();
 })();
